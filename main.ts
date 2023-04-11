@@ -1,17 +1,23 @@
+namespace SpriteKind {
+    export const Cofraj = SpriteKind.create()
+}
 function initCofraj () {
     cofraj = sprites.create(img`
         e . . . . e . . . . e . . . . e 
         e . . . . e . . . . e . . . . e 
         e . . . . e . . . . e . . . . e 
-        e . . . . e . . . . e . . . . e 
+        e . d . . e . . d . e . . d . e 
         e . . . . e . . . . e . . . . e 
         e e e e e e e e e e e e e e e e 
-        `, SpriteKind.Player)
+        `, SpriteKind.Cofraj)
     cofraj.setPosition(7, 61)
     cofraj.setStayInScreen(true)
     cofraj.setVelocity(100, 0)
     cofraj.setBounceOnWall(true)
 }
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Cofraj, function (sprite, otherSprite) {
+	
+})
 let ou: Sprite = null
 let cofraj: Sprite = null
 scene.setBackgroundImage(img`
