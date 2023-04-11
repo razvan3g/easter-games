@@ -1,10 +1,10 @@
 function initCofraj () {
     cofraj = sprites.create(img`
-        e . . . e . . . . . e . . . . e 
-        e . . . e . . . . . e . . . . e 
-        e . . . e . . . . . e . . . . e 
-        e . . . e . . . . . e . . . . e 
-        e . . . e . . . . . e . . . . e 
+        e . . . . e . . . . e . . . . e 
+        e . . . . e . . . . e . . . . e 
+        e . . . . e . . . . e . . . . e 
+        e . . . . e . . . . e . . . . e 
+        e . . . . e . . . . e . . . . e 
         e e e e e e e e e e e e e e e e 
         `, SpriteKind.Player)
     cofraj.setPosition(7, 61)
